@@ -65,7 +65,7 @@ class Webgrind_Config extends Webgrind_MasterConfig {
      */
     static function exposeServerFile($file) {
         // Grant access to all files remapped under the `/host` directory.
-        //$prefix = '/host/';                                    /** DOCKER:ENABLE **/
+        //$prefix = '/'; #'/host/';                                    /** DOCKER:ENABLE **/
         //$file = realpath($prefix . $file);                     /** DOCKER:ENABLE **/
         //return strncmp($prefix, $file, strlen($prefix)) === 0  /** DOCKER:ENABLE **/
         //    ? $file                                            /** DOCKER:ENABLE **/
